@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
 	"net/http"
-	"text/template"
 )
 
 // Home is the home page handler

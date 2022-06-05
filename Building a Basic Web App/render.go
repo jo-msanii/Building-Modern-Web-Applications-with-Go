@@ -6,6 +6,7 @@ import (
 	"text/template"
 )
 
+// renderTemplate just renders templates
 func renderTemplate(w http.ResponseWriter, tmpl string) {
 	pasredTemplate, _ := template.ParseFiles("./templates/" + tmpl)
 	err := pasredTemplate.Execute(w, nil)
